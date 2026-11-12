@@ -1,0 +1,34 @@
+[project]
+name = "quack-keys"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.4",
+    "pydub>=0.25.1",
+    "pynput>=1.8.2",
+    "pyside6>=6.12.0",
+    "sounddevice>=0.5.6",
+    "soundfile>=0.14.0",
+]
+
+[project.scripts]
+quack = "main:main"
+quack-gui = "gui:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+only-include = [
+    "main.py",
+    "config.py",
+    "audio",
+]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.3",
+]
