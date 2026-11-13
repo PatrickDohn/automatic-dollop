@@ -15,9 +15,13 @@ Quack is a macOS application that plays a sound whenever you press a configured 
 
 ## Installation
 
-### Download
+## Download
 
-Download the latest `Quack.dmg` installer.
+**[Download Quack for macOS](https://github.com/PatrickDohn/quack-keys/releases/latest)**
+
+Download the latest release, open `Quack.dmg`, and drag Quack into your Applications folder.
+
+Currently supports Apple Silicon Macs.
 
 1. Open `Quack.dmg`.
 2. Drag **Quack** into your Applications folder.
